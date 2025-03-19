@@ -7,16 +7,15 @@
 
     
 
-    <title>Nginx：一个轻量级的web服务器 | </title>
+    <title>profity | </title>
     <meta name="author" content="John Doe">
     
-    <meta name="description" content="Nginx：一个轻量级的web服务器本文为大家讲述的是一个后端的开发工具Nginx， Nginx是一个异步框架的web服务器，也可用作反向代理服务器。主要用在搭建web服务器，和处理一些高并发场景的时候。
-Nginx是由一位俄罗斯的程序员伊戈尔.赛索耶夫所开发的，原先是为了解决c10k（10万人同时">
+    <meta name="description" content="">
     
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta property="og:title" content="Nginx：一个轻量级的web服务器"/>
+    <meta property="og:title" content="profity"/>
     <meta property="og:site_name" content="Hexo"/>
 
     
@@ -214,12 +213,12 @@ Nginx是由一位俄罗斯的程序员伊戈尔.赛索耶夫所开发的，原�
             <div class="article-title">
                 
     
-        <h1>Nginx：一个轻量级的web服务器</h1>
+        <h1>profity</h1>
     
 
 
             </div>
-            <time class="pink-link-context" datetime="2025-03-18T01:12:04.000Z"><a href="/2025/03/18/Nginx%EF%BC%9A%E4%B8%80%E4%B8%AA%E8%BD%BB%E9%87%8F%E7%BA%A7%E7%9A%84web%E6%9C%8D%E5%8A%A1%E5%99%A8/">2025-03-18</a></time>
+            <time class="pink-link-context" datetime="2025-03-19T02:10:23.000Z"><a href="/2025/03/19/profity/">2025-03-19</a></time>
 
             <span id="busuanzi_container_page_pv" class="read-times-container">
     <i class="fa fa-eye"></i>
@@ -229,108 +228,19 @@ Nginx是由一位俄罗斯的程序员伊戈尔.赛索耶夫所开发的，原�
             
 
             <div class="toc pink-link-context hide-on-med-and-down">
-    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#Nginx%EF%BC%9A%E4%B8%80%E4%B8%AA%E8%BD%BB%E9%87%8F%E7%BA%A7%E7%9A%84web%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="section table-of-contents-text">Nginx：一个轻量级的web服务器</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#1-%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86"><span class="section table-of-contents-text">1.正向代理</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#2-%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86"><span class="section table-of-contents-text">2.反向代理</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#3-%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1"><span class="section table-of-contents-text">3.负载均衡</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#1-%E8%BD%AE%E8%AF%A2"><span class="section table-of-contents-text">1.轮询</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#2-weight"><span class="section table-of-contents-text">2.weight</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#3-ip-hash"><span class="section table-of-contents-text">3.ip_hash</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#4-fair"><span class="section table-of-contents-text">4.fair</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#5-url-hash"><span class="section table-of-contents-text">5.url_hash</span></a></li></ol></li></ol></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#%E5%AE%89%E8%A3%85Nginx"><span class="section table-of-contents-text">安装Nginx</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#1-%E4%B8%8B%E8%BD%BDNginx"><span class="section table-of-contents-text">1.下载Nginx</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#1-1%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80%EF%BC%9A-nginx%E5%AE%98%E7%BD%91-nginx-news"><span class="section table-of-contents-text">1.1下载地址：[nginx官网](nginx news)</span></a></li><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#1-2%E9%80%89%E6%8B%A9%E7%89%88%E6%9C%AC%E5%AE%89%E8%A3%85"><span class="section table-of-contents-text">1.2选择版本安装</span></a></li><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#1-3%E8%A7%A3%E5%8E%8B%E7%BC%A9"><span class="section table-of-contents-text">1.3解压缩</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
+    
 </div>
 
 
             <div class="entry pink-link-context">
-                <h1 id="Nginx：一个轻量级的web服务器"><a href="#Nginx：一个轻量级的web服务器" class="headerlink" title="Nginx：一个轻量级的web服务器"></a>Nginx：一个轻量级的web服务器</h1><p>本文为大家讲述的是一个后端的开发工具<strong>Nginx</strong>， Nginx是一个异步框架的web服务器，也可用作反向代理服务器。主要用在搭建web服务器，和处理一些高并发场景的时候。</p>
-<p>Nginx是由一位俄罗斯的程序员伊戈尔.赛索耶夫所开发的，原先是为了解决c10k（10万人同时访问）的问题，后来被大多数人用作了http服务器。</p>
-<p>Nginx是一款开源软件，现在由F5公司在更新。</p>
-<h3 id="1-正向代理"><a href="#1-正向代理" class="headerlink" title="1.正向代理"></a>1.正向代理</h3><p>什么是正向代理呢，当你要去谷歌上面搜索一些资料的时候，你并不可以直接访问，而是要通过一个叫<strong>vpn</strong>的东西代替你去访问人家的网站，这个过程就叫做正向代理。代理的对象是身为客户端的你，而你要访问的服务器你是知道的。</p>
-<p><img src="/2025/03/18/Nginx%EF%BC%9A%E4%B8%80%E4%B8%AA%E8%BD%BB%E9%87%8F%E7%BA%A7%E7%9A%84web%E6%9C%8D%E5%8A%A1%E5%99%A8/new_blog\source_posts\assets\1286052-20181102112932363-337659008-1742261136511-1.png"></p>
-<h3 id="2-反向代理"><a href="#2-反向代理" class="headerlink" title="2.反向代理"></a>2.反向代理</h3><p>那么反向代理肯定就是跟正向代理反过来嘛，当你访问一个服务器的时候，Nginx会将你拦下， 再对你的请求进行分类处理，让你的请求去到不同的服务器，以这样的方式减少一个服务器的负载，而且在这个过程中还拥有一定的保密效果。可以隐藏一部分重要服务器的ip地址。</p>
-<p><img src="/2025/03/18/Nginx%EF%BC%9A%E4%B8%80%E4%B8%AA%E8%BD%BB%E9%87%8F%E7%BA%A7%E7%9A%84web%E6%9C%8D%E5%8A%A1%E5%99%A8/new_blog\source_posts\assets\4af9f19d21854affa1ba6146512008ea-1742261136511-2.png"></p>
-<h3 id="3-负载均衡"><a href="#3-负载均衡" class="headerlink" title="3.负载均衡"></a>3.负载均衡</h3><p>负载均衡的策略有6种</p>
-<table>
-<thead>
-<tr>
-<th align="center">策略</th>
-<th align="center">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">轮询</td>
-<td align="center">默认方式</td>
-</tr>
-<tr>
-<td align="center">weight</td>
-<td align="center">权重方式</td>
-</tr>
-<tr>
-<td align="center">ip_hash</td>
-<td align="center">依据ip分配方式</td>
-</tr>
-<tr>
-<td align="center">fair</td>
-<td align="center">依据响应时间方式</td>
-</tr>
-<tr>
-<td align="center">url_hash</td>
-<td align="center">依据URL分配方式</td>
-</tr>
-</tbody></table>
-<h4 id="1-轮询"><a href="#1-轮询" class="headerlink" title="1.轮询"></a>1.轮询</h4><p>轮询即是按时间逐个分配，轮询就是服务器的权重都是一样的。</p>
-<img src="/2025/03/18/Nginx%EF%BC%9A%E4%B8%80%E4%B8%AA%E8%BD%BB%E9%87%8F%E7%BA%A7%E7%9A%84web%E6%9C%8D%E5%8A%A1%E5%99%A8/new_blog\source\_posts\assets\轮询-1742261136511-3.png">
-
-<h4 id="2-weight"><a href="#2-weight" class="headerlink" title="2.weight"></a>2.weight</h4><p>weight就是给每个服务器一个权重，权重越高，分配的越多。适用于服务器之间的性能差异较大。</p>
-<p><img src="/2025/03/18/Nginx%EF%BC%9A%E4%B8%80%E4%B8%AA%E8%BD%BB%E9%87%8F%E7%BA%A7%E7%9A%84web%E6%9C%8D%E5%8A%A1%E5%99%A8/new_blog\source_posts\assets\权重-1742261136511-4.png"></p>
-<h4 id="3-ip-hash"><a href="#3-ip-hash" class="headerlink" title="3.ip_hash"></a>3.ip_hash</h4><p>基于客户端的ip地址计算一个hash值，同一个hash值进同一个服务器。多用于解决多服务器之间session的问题。</p>
-<p><img src="/2025/03/18/Nginx%EF%BC%9A%E4%B8%80%E4%B8%AA%E8%BD%BB%E9%87%8F%E7%BA%A7%E7%9A%84web%E6%9C%8D%E5%8A%A1%E5%99%A8/new_blog\source_posts\assets\ip_hash-1742261136511-5.png"></p>
-<h4 id="4-fair"><a href="#4-fair" class="headerlink" title="4.fair"></a>4.fair</h4><p>fair会比较智能一点，根据页面的大小，加载时长来进行计算</p>
-<p><img src="/2025/03/18/Nginx%EF%BC%9A%E4%B8%80%E4%B8%AA%E8%BD%BB%E9%87%8F%E7%BA%A7%E7%9A%84web%E6%9C%8D%E5%8A%A1%E5%99%A8/new_blog\source_posts\assets\fair-1742261136511-6.png"></p>
-<h4 id="5-url-hash"><a href="#5-url-hash" class="headerlink" title="5.url_hash"></a>5.url_hash</h4><p>通过计算访问url的hash值，将同一种功能的请求发送给同一个服务器，可以减少资源上的浪费。</p>
-<p><img src="/2025/03/18/Nginx%EF%BC%9A%E4%B8%80%E4%B8%AA%E8%BD%BB%E9%87%8F%E7%BA%A7%E7%9A%84web%E6%9C%8D%E5%8A%A1%E5%99%A8/new_blog\source_posts\assets\url_hash-1742261136511-7.png"></p>
-<h1 id="安装Nginx"><a href="#安装Nginx" class="headerlink" title="安装Nginx"></a>安装Nginx</h1><p>现在我们看完了上面的理论接下来我们来安装一下Nginx</p>
-<h4 id="1-下载Nginx"><a href="#1-下载Nginx" class="headerlink" title="1.下载Nginx"></a>1.下载Nginx</h4><h5 id="1-1下载地址：-nginx官网-nginx-news"><a href="#1-1下载地址：-nginx官网-nginx-news" class="headerlink" title="1.1下载地址：[nginx官网](nginx news)"></a>1.1下载地址：[nginx官网](<a target="_blank" rel="noopener" href="https://nginx.org/">nginx news</a>)</h5><p>进入Nginx，然后找到download点击。</p>
-<p><img src="/2025/03/18/Nginx%EF%BC%9A%E4%B8%80%E4%B8%AA%E8%BD%BB%E9%87%8F%E7%BA%A7%E7%9A%84web%E6%9C%8D%E5%8A%A1%E5%99%A8/new_blog\source_posts\assets\Nginx官网-1742261136511-8.png"></p>
-<h5 id="1-2选择版本安装"><a href="#1-2选择版本安装" class="headerlink" title="1.2选择版本安装"></a>1.2选择版本安装</h5><p>我们选择稳定版本下载</p>
-<p><img src="/2025/03/18/Nginx%EF%BC%9A%E4%B8%80%E4%B8%AA%E8%BD%BB%E9%87%8F%E7%BA%A7%E7%9A%84web%E6%9C%8D%E5%8A%A1%E5%99%A8/new_blog\source_posts\assets\Nginx版本-1742261136512-9.png"></p>
-<h5 id="1-3解压缩"><a href="#1-3解压缩" class="headerlink" title="1.3解压缩"></a>1.3解压缩</h5><p>选择一个你喜欢的地址解压</p>
-<p>解压缩完之后就在标题栏里输入cmd，再按回车，进入命令提示符。</p>
-<p><img src="/2025/03/18/Nginx%EF%BC%9A%E4%B8%80%E4%B8%AA%E8%BD%BB%E9%87%8F%E7%BA%A7%E7%9A%84web%E6%9C%8D%E5%8A%A1%E5%99%A8/new_blog\source_posts\assets\cmd-1742261136512-10.png"></p>
-<p>开启Nginx的命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">start nginx</span><br></pre></td></tr></table></figure>
-
-<p><img src="/2025/03/18/Nginx%EF%BC%9A%E4%B8%80%E4%B8%AA%E8%BD%BB%E9%87%8F%E7%BA%A7%E7%9A%84web%E6%9C%8D%E5%8A%A1%E5%99%A8/new_blog\source_posts\assets\启动nginx-1742261136512-11.png"></p>
-<p>一般情况下Nginx的默认配置端口号是80。</p>
-<p>如果不是80，则需要修改过后再重新启动。</p>
-<p><img src="/2025/03/18/Nginx%EF%BC%9A%E4%B8%80%E4%B8%AA%E8%BD%BB%E9%87%8F%E7%BA%A7%E7%9A%84web%E6%9C%8D%E5%8A%A1%E5%99%A8/new_blog\source_posts\assets\nginx默认端口号-1742261136512-12.png"></p>
-<p>启动完了之后，我们去浏览器里输入<a href="localhost:80">localhost:80</a></p>
-<p>当我们看到下面图片的时候， 你就启动成功了！</p>
-<p><img src="/2025/03/18/Nginx%EF%BC%9A%E4%B8%80%E4%B8%AA%E8%BD%BB%E9%87%8F%E7%BA%A7%E7%9A%84web%E6%9C%8D%E5%8A%A1%E5%99%A8/new_blog\source_posts\assets\nginx浏览器启动成功-1742261136512-13.png"></p>
-<p>然后我们再回到刚才的命令提示符上去查看我们nginx的进程</p>
-<p>查看Nginx进程的命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tasklist |findstr “nginx.exe</span><br></pre></td></tr></table></figure>
-
-<p><img src="/2025/03/18/Nginx%EF%BC%9A%E4%B8%80%E4%B8%AA%E8%BD%BB%E9%87%8F%E7%BA%A7%E7%9A%84web%E6%9C%8D%E5%8A%A1%E5%99%A8/new_blog\source_posts\assets\查看任务进程-1742261136512-14.png"></p>
-<p>这时候如果你想结束某一段进程的话。</p>
-<p>结束一个进程的命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">taskkill /f /t /pid </span><br></pre></td></tr></table></figure>
-
-<p>在此命令后加上你想去掉的PID号。（记得空格）</p>
-<p><img src="/2025/03/18/Nginx%EF%BC%9A%E4%B8%80%E4%B8%AA%E8%BD%BB%E9%87%8F%E7%BA%A7%E7%9A%84web%E6%9C%8D%E5%8A%A1%E5%99%A8/new_blog\source_posts\assets\终止进程-1742261136512-15.png"></p>
-<p>如果你想结束所有进程的话。</p>
-<p>结束所有进程的命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">taskkill /f /t /im “nginx.exe”</span><br></pre></td></tr></table></figure>
-
-<p><img src="/2025/03/18/Nginx%EF%BC%9A%E4%B8%80%E4%B8%AA%E8%BD%BB%E9%87%8F%E7%BA%A7%E7%9A%84web%E6%9C%8D%E5%8A%A1%E5%99%A8/new_blog\source_posts\assets\终止所有进程-1742261136512-16.png"></p>
-<p>结束完所有进程后再去浏览器刷新一下</p>
-<p>我们就看到我们的端口就关闭了</p>
-<p><img src="/2025/03/18/Nginx%EF%BC%9A%E4%B8%80%E4%B8%AA%E8%BD%BB%E9%87%8F%E7%BA%A7%E7%9A%84web%E6%9C%8D%E5%8A%A1%E5%99%A8/new_blog\source_posts\assets\终止进程后就无法访问了-1742261136512-17.png"></p>
+                <p><img src="/2025/03/19/profity/1286052-20181102112932363-337659008-1742261136511-1.png"></p>
 
                 
-<p class="pink-link-context">
-    <a href="/2025/03/19/profity/" rel="next" title="profity">
-    上一篇：profity
-  </a>
-</p>
-
 
 
 <p class="pink-link-context">
-    <a href="/2025/03/18/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90%E2%80%94%E2%80%94%E6%98%A0%E5%B0%84%E4%B8%8E%E5%87%BD%E6%95%B0/" rel="next" title="函数与极限——映射与函数">
-    下一篇：函数与极限——映射与函数
+    <a href="/2025/03/18/Nginx%EF%BC%9A%E4%B8%80%E4%B8%AA%E8%BD%BB%E9%87%8F%E7%BA%A7%E7%9A%84web%E6%9C%8D%E5%8A%A1%E5%99%A8/" rel="next" title="Nginx：一个轻量级的web服务器">
+    下一篇：Nginx：一个轻量级的web服务器
   </a>
 </p>
 
